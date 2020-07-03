@@ -1,0 +1,12 @@
+language:  python
+python:
+  - "3.6"
+install:
+  - make deps
+script:
+  - make test
+
+deploy:
+  provider: heroku
+  app: arcane-hamlet-10587
+  api_key: ${HEROKU_API_KEY}
